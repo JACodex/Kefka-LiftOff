@@ -4,5 +4,17 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#Hero-Section h1{
+    text-align: center;
+    padding-bottom: 10rem;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: ghostwhite;
 }
