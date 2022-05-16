@@ -27,6 +27,26 @@ namespace KEFKA.Controllers
             StoryData.Add(newStory);
             return Redirect("/story");
         }
+        [HttpGet("/story/Edit/{storyID?}")]
+        public IActionResult Edit(int storyID = 0)
+        {
+            if(storyID == 0 || storyID.ToString().Equals(""))
+            {
+                return Redirect("/Story");
+            }
+            else
+            {
+                ViewBag.EditStory = StoryData.GetById(storyID);
+                return View();
+            }
+        }
+
+        [HttpPost]
+        [Route("/Edit")]
+        public IActionResult submitEditStory(int storyID, string name, string description)
+        {
+            return View();
+        }
 
         public IActionResult Delete()
         {
