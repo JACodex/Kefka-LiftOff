@@ -15,6 +15,7 @@
         <th>ID</th>
         <th>Story Title</th>
         <th>Description</th>
+        <th>Selected</th>
     </tr>
         @foreach(Story story in ViewBag.Stories)
         {
@@ -22,6 +23,7 @@
                 <td>@story.ID</td>
                 <td>@story.Name</td>
                 <td>@story.Description</td>
+                <td><a asp-controller="Story" asp-action="Edit" asp-route-id="@story.ID" >Edit Story : @story.ID</a></td>
             </tr>
         }
     </table>

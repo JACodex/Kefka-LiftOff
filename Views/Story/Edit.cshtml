@@ -5,6 +5,7 @@
 }
     <h3>Editing Story ID: @ViewBag.EditStory.ID - @ViewBag.EditStory.Name </h3>
     <form method="post" action="/story/edit">
+    <input type="number" name="storyID" value="@ViewBag.EditStory.ID" hidden>
     <label for="name">Enter Story Title</label>
     <input name="name" type="text" value="@ViewBag.EditStory.Name">
     <label for="description">Description</label>

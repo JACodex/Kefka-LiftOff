@@ -30,7 +30,7 @@ namespace KEFKA.Controllers
         [HttpGet("/story/Edit/{storyID?}")]
         public IActionResult Edit(int storyID = 0)
         {
-            if(storyID == 0 || storyID.ToString().Equals(""))
+            if (storyID == 0 || storyID.ToString().Equals(""))
             {
                 return Redirect("/Story");
             }
@@ -42,10 +42,12 @@ namespace KEFKA.Controllers
         }
 
         [HttpPost]
-        [Route("/Edit")]
+        [Route("/story/Edit")]
         public IActionResult submitEditStory(int storyID, string name, string description)
         {
-            return View();
+            StoryData.GetById(storyID).Name = name;
+            StoryData.GetById(storyID).Description = description;
+            return Redirect("/story");
         }
 
         public IActionResult Delete()
