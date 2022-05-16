@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<p>
+    <a asp-controller="Story" asp-action="Add">Add Story</a>
+</p>
+    <h1>Story Component</h1>
+@if(ViewBag.Stories.Count > 0)
+{
+<table class="table">
+    <tr>
+        <th>Story Title</th>
+        <th>Description</th>
+    </tr>
+        @foreach(Story story in ViewBag.Stories)
+        {
+            <tr>
+                <td>@story.Name</td>
+                <td>@story.Description</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No Stories</p>
+}
+
+
