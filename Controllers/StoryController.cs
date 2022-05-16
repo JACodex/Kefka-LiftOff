@@ -1,18 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KEFKA.Models;
-using System.Collections.Generic;
-
+using KEFKA.Data;
 namespace KEFKA.Controllers
 {
     public class StoryController : Controller
     {
 
-        static private List<Story> stories = new List<Story>();
 
         public IActionResult Index()
         {
             //stories.Add(new Story("Test Story", "some sdfdsjf jdvnjfn"));
-            ViewBag.Stories = stories;
+            ViewBag.Stories = StoryData.GetAll();
             return View();
         }
 
@@ -23,10 +21,27 @@ namespace KEFKA.Controllers
 
         [HttpPost]
         [Route("/story/add")]
-        public IActionResult Add(string name, string description)
+        public IActionResult Add(Story newStory)
         {
+            //Story newStory = new Story(name, description);
+            StoryData.Add(newStory);
+            return Redirect("/story");
+        }
 
-            stories.Add(new Story(name, description));
+        public IActionResult Delete()
+        {
+            ViewBag.Stories = StoryData.GetAll();
+            return View();
+        }
+
+        [HttpPost]
+        [Route("/story/Delete")]
+        public IActionResult Delete(int[] storyIds)
+        {
+            foreach(int storyId in storyIds)
+            {
+                StoryData.Remove(storyId);
+            }
             return Redirect("/story");
         }
     }

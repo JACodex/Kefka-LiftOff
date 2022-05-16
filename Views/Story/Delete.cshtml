@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Delete Story</h1>
+<form method="post">
+    @foreach(var story in ViewBag.Stories)
+    {
+        <div class="form-group">
+            <label>
+                <span>@story.Name</span>
+                <input type="checkbox" name="storyIds" value="@story.ID">
+            </label>
+        </div>
+    }
+    <input type="submit" value="Delete Selected Stories" class="btn btn-danger" >
+</form>

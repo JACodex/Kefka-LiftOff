@@ -1,21 +1,31 @@
-﻿namespace KEFKA.Models
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace KEFKA.Models
 {
     public class Story
     {
+        //[FromForm(Name="name")]
         public string Name { get; set; }
+
+        //[FromForm(Name="description")]
         public string Description { get; set; }
 
-        private static int ID { get; set; }
+        public  int ID { get;  }
 
         private static int nextID = 1;
 
-
-        public Story(string name, string description)
+        public Story()
+        {
+            ID = nextID;
+            nextID++;
+            Name = "TODO: Add a Title this Story";
+            Description = "TODO: Add Description to this Story";
+        }
+        public Story(string name, string description) : base()
         {
             Name = name;
             Description = description;
-            ID = nextID;
-            nextID++;
+
         }
 
         public override bool Equals(object? obj)
