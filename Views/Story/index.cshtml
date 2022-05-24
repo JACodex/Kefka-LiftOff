@@ -15,15 +15,17 @@
         <th>ID</th>
         <th>Story Title</th>
         <th>Description</th>
+        <th>Story Text</th>
         <th>Selected</th>
     </tr>
         @foreach(Story story in ViewBag.Stories)
         {
             <tr>
-                <td>@story.ID</td>
+                <td>@story.Id</td>
                 <td>@story.Name</td>
                 <td>@story.Description</td>
-                <td><a asp-controller="Story" asp-action="Edit" asp-route-id="@story.ID" >Edit Story : @story.ID</a></td>
+                <td>@story.StoryText</td>
+                <td><a asp-controller="Story" asp-action="Edit" asp-route-id="@story.Id" >Edit Story : @story.Id</a></td>
             </tr>
         }
     </table>

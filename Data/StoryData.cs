@@ -6,6 +6,7 @@ namespace KEFKA.Data
     public class StoryData
     {
         static private Dictionary<int , Story> Stories = new Dictionary<int, Story>();
+         
 
         public static IEnumerable<Story> GetAll()
         {
@@ -14,7 +15,7 @@ namespace KEFKA.Data
 
         public static void Add(Story newStory)
         {
-            Stories.Add(newStory.ID, newStory);
+            Stories.Add(newStory.Id, newStory);
         }
 
         public static void Remove(int id)

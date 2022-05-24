@@ -6,6 +6,16 @@ C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\KEFKA.deps.json
 C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\KEFKA.runtimeconfig.json
 C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\KEFKA.dll
 C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\KEFKA.pdb
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Microsoft.Bcl.HashCode.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\jlync\source\repos\KEFKA\bin\Debug\net6.0\Pomelo.JsonObject.dll
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\KEFKA.csproj.AssemblyReference.cache
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\KEFKA.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\KEFKA.AssemblyInfoInputs.cache
@@ -19,6 +29,7 @@ C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\staticwebassets.development.j
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\scopedcss\bundle\KEFKA.styles.css
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\scopedcss\projectbundle\KEFKA.bundle.scp.css
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\KEFKA.csproj.CopyComplete
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\KEFKA.dll
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\refint\KEFKA.dll
 C:\Users\jlync\source\repos\KEFKA\obj\Debug\net6.0\KEFKA.pdb

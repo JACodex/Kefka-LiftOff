@@ -1,0 +1,8 @@
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.csproj.AssemblyReference.cache
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.AssemblyInfoInputs.cache
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.AssemblyInfo.cs
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.csproj.CoreCompileInputs.cache
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.RazorAssemblyInfo.cache
+C:\Users\jlync\source\repos\KEFKA\obj\Debug\netcoreapp3.1\KEFKA.RazorAssemblyInfo.cs

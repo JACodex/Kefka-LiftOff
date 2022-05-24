@@ -10,22 +10,25 @@ namespace KEFKA.Models
         //[FromForm(Name="description")]
         public string Description { get; set; }
 
-        public  int ID { get;  }
+        public string StoryText { get; set; }
 
-        private static int nextID = 1;
+        public  int Id { get; set; }
+
+        //private static int nextID = 1;
 
         public Story()
         {
-            ID = nextID;
-            nextID++;
-            Name = "TODO: Add a Title this Story";
-            Description = "TODO: Add Description to this Story";
+            //ID = nextID;
+            //nextID++;
+            //Name = "TODO: Add a Title this Story";
+            //Description = "TODO: Add Description to this Story";
+            //StoryText = "TODO: Add Story Text Here";
         }
-        public Story(string name, string description) : base()
+        public Story(string name, string description, string storyText) : base()
         {
             Name = name;
             Description = description;
-
+            StoryText = storyText;
         }
 
         public override bool Equals(object? obj)
